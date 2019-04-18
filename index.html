@@ -7,202 +7,255 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EraCure</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="main.js"></script>
 </head>
 
+
+
+
+
 <body>
-    <!-- header have only nav links -->
-    <header class=header>
-        <nav class=nav1>
-            <a class=home href="#">Home</a>
-            <a class=why href="#">Why us?</a>
-            <a class=about href="#">About Us</a>
-            <a class=services href="#">Our Services</a>
-            <a class=contact href="#">Contact</a>
-        </nav>
-    </header>
-
-
-    <!-- home  -->
-    <main>
-        <section class="homepage">
-            <!-- logo -->
-            <div class=logo>
-                <img class="logoimg"src="./Images/eracure logo.png" alt="EraCure logo">
-            </div>
-            <!-- content -->
-            <div class="Download">
-                <h1>We are launching our</h1>
-                <h1>App Soon!</h1>
-                <!-- img link -->
-                <img class="Googleplay" src="./Images/icon_Google Play.png" alt="git it on google play">
-                <img class="Appstore" src="./ImageS/icon_App Store.png" alt="available in app store">
-                <!-- sinup input -->
-                <div class=signupinput>
-                    <input id="email" type="email" placeholder="Your email">
-                    <button id="signup" type="submit">Sign Up</button>
+     <!-- _______________________ nav bar ____________________ -->
+    <div class="fixedBar">
+        <div class="header">
+            <nav>
+                <div class="progress-container">
+                    <div class="progress-bar" id="myBar"> </div>
                 </div>
-            </div>
-            <!-- img -->
-            <div class=phoneImg>
-                <img class="Iphone" src="./Images/iphone1.png" alt="Iphone Image">
-            </div>
-        </section>
-    </main>
+                <a href="#homepage">
+                    <img class=logo src="./Images/eracure logo1.png" alt="logo">
+                </a>
+                <ul>
+                    <li id="home">
+                        <a href="#homepage">Home</a>
+                    </li>
+                    <li id="why">
+                        <a href="#whyuspage">Why Us?</a>
+                    </li>
+                    <li id="services">
+                        <a href="#servicespage">Our Services</a>
+                    </li>
+                    <li id="about">
+                        <a href="#aboutuspage">About Us</a>
+                    </li>
+                    <li id="contact">
+                        <a href="#contactpage">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+  <!-- _______________________end of nav bar ____________________ -->
 
 
 
 
-    <!-- why us  -->
-    <main>
-        <section class=whyuspage>
-            <!-- content -->
-            <div class="whyus">
-                <h1>What? Eracure!</h1>
-                <p> Requesting a Physiotherapists is Easy peasy </p>
-            </div>
-            <!-- img w/ text  -->
-            <div class=box1>
-                <div class="browse">
-                    <img class="browse1" src="./Images/1.png" alt="">
-                    <h1> From the Crib </h1>
-                    <p>Browse & Discover</p>
+
+        <main>
+            <!-- _______________________Home page ____________________ -->
+
+
+            <section id="homepage">
+                <div class=container1>
+                    <div id=backgroundimg> </div>
+                    <img class="logoimg" src="./Images/eracure logo white ai-02.png" alt="EraCure logo">
+                    <!-- content -->
+                    <div class="Download">
+                        <h1>We are launching our</h1>
+                        <h1>App Soon!</h1>
+                        <!-- img link -->
+
+                        <div class=button>
+                            <img class="Googleplay" src="./Images/icon_Google Play.png" alt="git it on google play">
+                            <img class="Appstore" src="./ImageS/icon_App Store.png" alt="available in app store">
+                            <!-- sinup input -->
+                        </div>
+
+                    </div>
+                    <img class="Iphone" src="./Images/iphone3.png" alt="Iphone Image">
+                    <div class="container3">
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </div>
+
+
+                    <div class="container4">
+                        <div class="top"></div>
+                        <div class="bottom"></div>
+                    </div>
                 </div>
-                <div class="request">
-                    <img class="request1" src="./Images/2.png" alt="">
-                    <h1> Request </h1>
-                    <p> Browse & Discover</p>
+            </section>
+            <!-- _______________________ End Home page ____________________ -->
+
+
+
+
+
+            <!-- ____________________ Why Us page_________________  -->
+
+            <section id=whyuspage>
+                <div class="whyus">
+                    <h1>What? Eracure!</h1>
+                    <p> Requesting Physiotherapists never been easier </p>
                 </div>
-                <div class="complet">
-                    <img class="complet1" src="./Images/3.png" alt="">
-                    <h1>To the Crib </h1>
-                    <p> Browse & Discover</p>
+                <div class=box1>
+                    <div class="browse">
+                        <img class="browse1" src="./Images/search.gif" alt="browse img">
+                        <h1> From the Crib! </h1>
+                        <p> Rest at home and book your appointment</p>
+                    </div>
+                    <div class="request">
+                        <img class="request1" src="./Images/request.gif" alt="on the way img">
+                        <h1> On the way! </h1>
+                        <p>The best physiotherapist will be on the way</p>
+                    </div>
+                    <div class="complet">
+                        <img class="complet1" src="./Images/52-ambulance.gif" alt="on doorstep img">
+                        <h1> we are here </h1>
+                        <p> your physiotherapist is at your doorstep</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </main>
+            </section>
+            <!-- ____________________ End Why Us page_________________  -->
 
 
 
 
 
-    <!-- services   -->
-    <main>
-        <section class=servicespage>
-            <!-- content -->
-            <div class="servicesp">
-                <h1>What Services we Provide!</h1>
-                <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudg </p>
-            </div>
-            <!-- img w/ text -->
-            <div class=box2>
-                <div class="services1">
-                    <img class="services1img" src="./Images/3.png" alt="">
-                    <h2> Nervous system</h2>
-                    <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudgsffsfsgfsdf 
-                        </p>
+            <!-- ____________________Our services page_____________________  -->
+            <section id=servicespage>
+                <div class="servicesp">
+                    <h1>What Services we Provide!</h1>
+                    <p> no matter what is you age or your gender we are here for you </p>
                 </div>
-                <div class="services2">
-                    <img class="services2img" src="./Images/3.png" alt="">
-                    <h2> Structural system</h2>
-                    <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudgsffsfsgfsdf 
-                           </p>
+                <div class=box2>
+                    <div class="services1">
+                        <img class="services1img" src="./Images/pain icon-10.png" alt="Stress relief img">
+                        <h2> Stress relief </h2>
+                    </div>
+                    <div class="services2">
+                        <img class="services2img" src="./Images/skeleton icon-03.png" alt="Structural system img">
+                        <h2> Structural system</h2>
+                    </div>
+                    <div class="services3">
+                        <img class="services3img" src="./Images/rehab icon-05.png" alt="Rehabilitation img">
+                        <h2> Rehabilitation </h2>
+                    </div>
+
+                    <div class="services4">
+                        <img class="services4img" src="./Images/sports icon-07.png" alt="Sports injuries img">
+                        <h2> Sports injuries </h2>
+                    </div>
+
                 </div>
-                <div class="services3">
-                    <img class="services3img" src="./Images/3.png" alt="">
-                    <h2> Respiratory system </h2>
-                    <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudgsffsfsgfsdf 
-                           </p>
+                <div class=box3>
+                    <div class="services5">
+                        <img class="services5img" src="./Images/nerve icon-04.png" alt="Nervous system img">
+                        <h2> Nervous system</h2>
+                    </div>
+
+                    <div class="services6">
+                        <img class="services6img" src="./Images/female icon-09.png" alt="Women's health img">
+                        <h2> Women's health </h2>
+                    </div>
+                    <div class="services7">
+                        <img class="services7img" src="./Images/lungs icon-02.png" alt="Respiratory system img">
+                        <h2> Respiratory system </h2>
+                    </div>
                 </div>
-                <div class="services4">
-                    <img class="services4img" src="./Images/3.png" alt="">
-                    <h2> Women's health </h2>
-                    <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudgsffsfsgfsdf 
-                           </p>
+            </section>
+            <!-- ____________________End Our services page_____________________ -->
+
+
+
+
+
+            <!-- _________________About us page_________.. got helped from Jackie website_________  -->
+
+            <section id="aboutuspage">
+                <div class="aboutus1">
+                    <h3>What is EraCure </h3>
+                    <div id="vision">
+                        <div class="visioninfo">
+                            <p>Era cure is an mobile application built to
+                                achieves the desires of patients requiring physical therapy<br>
+                                at home. </p>
+
+                        </div>
+                        <div>
+                            <div class="visionimg">
+                                <p class="info">More Info</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="services5">
-                    <img class="services5img" src="./Images/3.png" alt="">
-                    <h2> Stress relief </h2>
-                    <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudgsffsfsgfsdf 
-                        </p>
+
+
+
+                <div class="aboutus2">
+                    <h3>EraCure Mission </h3>
+                    <div id="mission">
+                        <div class="missioninfo">
+                            <p> Our mission is to provide physiotherapy services at your home <br>
+                                from medical centers through a Mobile application <br>
+                                with high quality, lowest price and fastest time </p>
+                        </div>
+                        <div>
+                            <div class="missionimg">
+                                <p class="info">More Info</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="services6">
-                    <img class="services6img" src="./Images/3.png" alt="">
-                    <h2> Sports injuries </h2>
-                    <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudgsffsfsgfsdf 
-                           </p>
+            </section>
+            <!-- _________________Ens About us page__________________  -->
+
+
+
+
+
+            <!-- _____________________ Contact Us page______________ -->
+
+            <section id=contactpage>
+                <h3>Contact Us</h3>
+                <p>If you have any inquiry, complaint or suggestion
+                    You can contact us throug the following form </p>
+                <div class="contactcontainer">
+                    <form id="contactusform">
+                        <label for="firstname">First Name</label>
+                        <br>
+                        <input type="text" id="fname" name="firstname" placeholder="Please Write your First Name..">
+                        <br>
+                        <label for="lastname">Last Name</label>
+                        <br>
+                        <input type="text" id="lname" name="lastname" placeholder="Please Write your Last Name..">
+                        <br>
+                        <label for="subject">Subject</label>
+                        <br>
+                        <textarea id="subject" name="subject" placeholder="Please Write Something.."
+                            style="height:200px"></textarea>
+                        <br>
+                        <input type="submit" id=submit value="Submit">
+                    </form>
                 </div>
-                <div class="services7">
-                    <img class="services7img" src="./Images/3.png" alt="">
-                    <h2> Rehabilitation </h2>
-                    <p> sffsfsgfsdf jf9dur9er weur9wey rugfgsudgsffsfsgfsdf 
-                           </p>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+            <!-- _____________________ End Contact Us page______________ -->
 
-
-
-
-    <!-- about us  -->
-    <main>
-        <section class=aboutuspage>
-            <!-- img -->
-            <div>
-                <img class="aboutusimg" src="./Images/3.png" alt="">
-            </div>
-            <!-- content -->
-            <div class=aboutus>
-                <h1> The Idea </h1>
-                <p> yyihihkh;o hilhy y y gtiliyi ubjb 
-                    jtiuttiy iyigjuj
-                    vkglipiu;
-                </p>
-                <h1> Vision </h1>
-                <p> yyihihkh;o hilhy y y gtiliyi ubjb 
-                        jtiuttiy iyigjuj
-                        vkglipiu;</p>
-                <h1> Mission </h1>
-                <p> yyihihkh;o hilhy y y gtiliyi ubjb 
-                        jtiuttiy iyigjuj
-                        vkglipiu;</p>
-            </div>
-        </section>
-    </main>
-
-
-
-    <!-- footer -->
-    <footer>
-        <section class=footerpage>
-            <!-- content -->
-            <div class="download1">
-                <h1>We are EraCure!</h1>
-                <h1>App Soon!</h1>
-            <!-- img link -->
-                <img class="Googleplay1" src="./Images/icon_Google Play.png" alt="git it on google play">
-                <img class="Appstore1" src="./Images/icon_App Store.png" alt="available in app store">
-            </div>
-
-            <!-- img  -->
-            <div class=phoneImg1>
-                <img class="Iphone1" src="./Images/iphone1.png" alt="Iphone Image">
-            </div>
-            <!-- img link -->
+        </main>
+        <!-- __________________Footer_________________ -->
+        <footer>
+            <p id=footer>&#169; Sara Daghustani. made in KSA.</p>
             <div class=follow>
                 <h3>Follow Us</h3>
-                <img class="twitter" src="./Images.." alt="Iphone Image">
-                <img class="instegram" src="./Images.." alt="Iphone Image">
+                <img class="twitter" src="./Images/twitter.png" alt="Follow us in Twitter">
+                <img class="instegram" src="./Images/instagram.png" alt="Follow us in Instagram ">
             </div>
-            <!-- content -->
-            <div class=contactp>
-                <h3> Contact us</h3>
-                <h4> email</h4>
-                <h3> For any problems or information.</h3>
-                <h4> email</h4>
-            </div>
-        </section>
-    </footer>
+        </footer>
+        <!--  __________________End Footer________________ -->
+
+    </div>
 </body>
 
 </html>
