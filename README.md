@@ -37,9 +37,10 @@ index.html
 <img src="/era3.png" alt="Image">
 <img src="/era4.png" alt="Image">
 <img src="/era5.png" alt="Image">
----
-<h5> Wireframe :</h5>
 
+---
+
+<h5> Wireframe :</h5>
 <img src="/Wireframe1.png"" alt="Image">
 
 ----
