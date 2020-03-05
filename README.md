@@ -74,20 +74,11 @@ index.html
 <h5>Features : </h5>
 <ul>
   <li> Website built in one page.</li>
-  <li> Make progress bar shows up and move when scrolling down or up .</li>
+  <li> Make progress bar shows up and move when scrolling down or up.</li>
   <li> Toggle information in about us page</li>
   <li> The ability to change the name in contact us page after submiting</li>
   <li> Fade in pictures in whyus page when reaching the sections </li>
   <li> The website deployet into GitHub.</li>
-</ul>
-
-----
-
-<h5>Future plans : </h5>
-<ul>
-  <li> Create more levels of the game, medium and hard.</li>
-  <li> The ability to play with the computer (AI).</li>
-  <li> Add the ability to type the user name. </li>
 </ul>
 
 ----
