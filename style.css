@@ -418,22 +418,21 @@ nav a {
   align-items: center;
   justify-content: center;
   margin:0 auto;
-  margin-top: 20px;
 }
 
 
 .visioninfo, .missioninfo {
-  max-height: 100px;
+  max-height: 200px;
   width: 0px;
   overflow: hidden;
-  transition: width 2s;
+  transition: width 5s;
   display: flex;
 }
 
 
 .visioninfo.slidout {
   width: 600px;
-  height: 180px;
+  /* height: 600px; */
 }
 
 .visionimg:hover .info {
@@ -441,7 +440,7 @@ nav a {
 }
 .missioninfo.slidout {
     width: 600px;
-    height: 180px;
+    /* height: 600px; */
   }
   
   .missionimg:hover .info {
