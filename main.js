@@ -1,7 +1,4 @@
 
-
-
-
 // make progress bar shows up and move when scrolling down or up 
 // this part got help from shumukh. 
 window.onload = function () {
