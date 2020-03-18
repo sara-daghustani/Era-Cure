@@ -63,3 +63,89 @@ $(document).ready(function(){
        $('#contactpage p').text('We got your message! will contact with you soon');
     }
 });
+
+// Your web app's Firebase configuration
+var firebaseConfig = {
+  apiKey: "AIzaSyApo4xMVYzjW89s6DvjvK7Kwp1ht19agNQ",
+  authDomain: "era-cure.firebaseapp.com",
+  databaseURL: "https://era-cure.firebaseio.com",
+  projectId: "era-cure",
+  storageBucket: "era-cure.appspot.com",
+  messagingSenderId: "1065217510027",
+  appId: "1:1065217510027:web:3b5d5c716f17b2aa52e28e"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+// Reference messages collection
+var messagesRef = firebase.database().ref('messages');
+
+
+//Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// submit form 
+function submitForm(e){
+e.preventDefault();
+console.log(123);
+
+//Get Value
+var firstName = getInputVal("firstName");
+var lastName = getInputVal("lastName");
+var email = getInputVal("email");
+var message = getInputVal("message");
+// console.log(firstName + " " + lastName +" "+ email + " "+ message);
+
+//save massage
+saveMessage(firstName, lastName, email, message);
+
+// show alart
+document.querySelector('.alart').style.display= "inline-block";
+document.querySelector('#firstName').style.display= "none";
+document.querySelector('#lastName').style.display= "none";
+document.querySelector('#email').style.display= "none";
+document.querySelector('#message').style.display= "none";
+document.querySelector('#submit').style.display= "none";
+document.querySelector('#firstLabel').style.display= "none";
+document.querySelector('#lastLabel').style.display= "none";
+document.querySelector('#emailLabel').style.display= "none";
+
+
+
+
+// Hide alart after 3 second 
+setTimeout(function(){
+	document.querySelector('.alart').style.display= "none";
+	document.querySelector('#firstName').style.display= "inline-block";
+	document.querySelector('#lastName').style.display= "inline-block";
+	document.querySelector('#email').style.display= "inline-block";
+	document.querySelector('#message').style.display= "inline-block";
+  document.querySelector('#submit').style.display= "inline-block";
+  document.querySelector('#firstLabel').style.display= "inline-block";
+document.querySelector('#lastLabel').style.display= "inline-block";
+document.querySelector('#emailLabel').style.display= "inline-block";
+ 
+
+}, 3000);
+
+ //clear from
+	document.getElementById('contactForm').reset();
+}
+
+// function to get  form value 
+function getInputVal(id){
+	return document.getElementById(id).value;
+}
+
+// save massage to firebase
+function saveMessage(firstName, lastName, email, message){
+	var newMessageRef = messagesRef.push();
+	newMessageRef.set({
+		firstName : firstName,
+		lastName : lastName,
+		email : email,
+		message : message
+	});
+
+
+}

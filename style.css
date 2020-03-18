@@ -503,36 +503,7 @@ nav a {
   text-align: center;
 }
 
-input[type=text] {
-  width: 300px;
-  height: 20px;
-  margin-top: 3px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  border: 2px solid white;
-  box-shadow: 0 2px 2px 0px  rgba(0, 179, 224, 0.842);
-}
 
-input[type=email]{
-  width: 300px;
-  height: 20px;
-  margin-top: 3px;
-  margin-bottom: 5px;
-  border-radius: 5px;
-  border: 2px solid white;
-  box-shadow: 0 2px 2px 0px  rgba(0, 179, 224, 0.842);
-}
-textarea {
-  width: 300px;
-  height: 100px;
-  margin-top: 3px;
-  margin-bottom: 5px; 
-  border-radius: 5px;
-  border: 2px solid white;
-  box-shadow: 0 2px 2px 0px  rgba(0, 179, 224, 0.842);
-  resize: none;
-  
-}
 #submit{
   background-color: rgba(0, 179, 224, 0.842);
   color: white;
@@ -549,6 +520,37 @@ textarea {
   background-color: #1F364E;
 }
 
+.alart {
+  text-align:center;
+  padding :10px;
+  background:rgba(0, 179, 224, 0.842) ;
+  color: white;
+  margin-bottom: 150px;
+  display: none;
+  margin-top: 150px;
+}
+
+#lastName, #firstName, #email {
+  width: 300px;
+  height: 20px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 0 2px 2px 0px  rgba(0, 179, 224, 0.842);
+  justify-items: center;
+}
+#message{
+  width: 300px;
+  height: 100px;
+  margin-top: 3px;
+  margin-bottom: 5px; 
+  border-radius: 5px;
+  border: 2px solid white;
+  box-shadow: 0 2px 2px 0px  rgba(0, 179, 224, 0.842);
+  resize: none;
+  justify-items: center;
+}
 /* _____________________ End Contact Us page______________ */
 
 

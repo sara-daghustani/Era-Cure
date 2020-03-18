@@ -7,9 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>EraCure</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <script src="main.js"></script>
+  
 </head>
 
 
@@ -221,21 +219,26 @@
                 <p>If you have any inquiry, complaint or suggestion
                     You can contact us throug the following form </p>
                 <div class="contactcontainer">
-                    <form id="contactusform">
-                        <label for="firstname">First Name</label>
+                    <form id="contactForm">
+                        <label id="firstLabel" for="firstname">First Name</label>
                         <br>
-                        <input type="text" id="fname" name="firstname" placeholder="Please Write your First Name..">
+                        <input type="text" placeholder="First name" id="firstName" required>
                         <br>
-                        <label for="lastname">Last Name</label>
+                        <label id="lastLabel" for="lastname">Last Name</label>
                         <br>
-                        <input type="text" id="lname" name="lastname" placeholder="Please Write your Last Name..">
+                        <input type="text"  placeholder="Last name" id="lastName" required>
                         <br>
-                        <label for="subject">Subject</label>
+                         <!-- ************ Alart that will show and hide ************** -->
+                         <div class = "alart">Your message has been sent</div>
+                         <!-- *********************************** -->
+                        <label id="emailLabel" for="email">Email</label>
                         <br>
-                        <textarea id="subject" name="subject" placeholder="Please Write Something.."
+                        <input type="email" id="email" placeholder="Email address"  name="email" id="email" required>
+                        <br>
+                        <textarea placeholder="Write your message." cols="30" rows="10" maxlength="6000" id="message" required"
                             style="height:200px"></textarea>
                         <br>
-                        <input type="submit" id=submit value="Submit">
+                        <input type="submit" id=submit value="Send Message">
                     </form>
                 </div>
             </section>
@@ -254,6 +257,11 @@
         <!--  __________________End Footer________________ -->
 
     </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
